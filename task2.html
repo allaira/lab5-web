@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторна робота 6</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1>Лабораторна робота 6. Об'єкти, масиви та DOM</h1>
+    <p>Виконала: студентка групи <strong>КН-32</strong> <strong>Айрапетова Алла</strong></p>
+    <nav class="menu">
+      <a href="index.html">Завдання 1</a>
+      <a href="task2.html" class="active">Завдання 2</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Завдання 2.1. Країни зі списку у теги &lt;li&gt;</h2>
+      <p class="desc"><strong>Умова:</strong> Ввести країни через кому і при натисканні кнопки вивести їх у список ul.</p>
+      
+      <input type="text" id="countryInput" class="input" value="Україна, Польща, Франція, Канада, Японія">
+      <button onclick="makeList()" class="btn">Створити список</button>
+      <ul id="countryList" class="styled-list"></ul>
+    </section>
+
+    <section class="card">
+      <h2>Завдання 2.2. Пошук максимуму в таблиці</h2>
+      <p class="desc"><strong>Умова:</strong> Знайти комірку з максимальним числом і зафарбувати її червоним кольором.</p>
+      
+      <table id="numTable" class="data-table">
+        <tr><td>12</td><td>-5</td><td>45</td><td>8</td></tr>
+        <tr><td>-20</td><td>99</td><td>0</td><td>17</td></tr>
+        <tr><td>34</td><td>-18</td><td>62</td><td>-3</td></tr>
+        <tr><td>88</td><td>105</td><td>-40</td><td>29</td></tr>
+      </table>
+
+      <button onclick="findMax()" class="btn">Знайти максимальне число</button>
+    </section>
+  </main>
+
+  <script src="js/task2.js"></script>
+</body>
+</html>
